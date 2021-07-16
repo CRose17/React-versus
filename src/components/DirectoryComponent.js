@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
-class Directory extends Component {
+function Directory(props) {
 
-    render() {
-        const directory = this.props.obstacles.map(obstacle => {
-            return (
+    const directory = props.obstacles.map(obstacle => {
+        return (
                 <div className="col">
                     <img src={obstacle.image} alt={obstacle.name} />
                 </div>
@@ -14,11 +15,20 @@ class Directory extends Component {
         return ( 
             <div className= "container">
                 <div className="row">
+                <div className="col">
+                    <Breadcrumb>
+                        <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
+                        <BreadcrumbItem active>Directory</BreadcrumbItem>
+                    </Breadcrumb>
+                    <h2>Directory</h2>
+                    <hr />
+                </div>
+            </div>
+                <div className="row">
                     {directory}
                 </div>
             </div>
          );
     }
-}
  
 export default Directory;

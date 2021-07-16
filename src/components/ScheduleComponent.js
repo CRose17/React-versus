@@ -2,21 +2,21 @@ import React from 'react';
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-function About(props) {
+function Schedule(props) {
     return (
         <div className="container">
             <div className="row">
                 <div className="col">
                     <Breadcrumb>
                         <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
-                        <BreadcrumbItem active>About Us</BreadcrumbItem>
+                        <BreadcrumbItem active>Schedule</BreadcrumbItem>
                     </Breadcrumb>
-                    <h2>About Us</h2>
-                    <hr />
+                    <h2>Upcoming Events</h2>
+                    <hr />                    
                 </div>
             </div>
         </div>
     );
 }
 
-export default About;
+export default Schedule;
