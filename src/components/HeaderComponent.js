@@ -34,7 +34,7 @@ class Header extends Component {
                 </Jumbotron>
                 <Navbar dark sticky="top" expand="md">
                     <div className="container">
-                        <NavbarBrand className="mr-auto" href="/"><img src="/assets/images/versusLogo.jpg" height="80" width="120" alt="Versus Logo" /></NavbarBrand>
+                        <NavbarBrand className="mr-auto" href="/"><img className="versusLogo" src="/assets/images/versusLogo.jpg" height="80" width="120" alt="Versus Logo" /></NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>
