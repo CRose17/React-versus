@@ -107,7 +107,8 @@ body, .app {
 
 .calendar {
     width: 75%;
-    border: 1px solid #564865;
+    background-color: #563865;
+    border: 1px solid white;
     margin-left: 7em;
     margin-bottom: 2em;
 }

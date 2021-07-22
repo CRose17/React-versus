@@ -1,5 +1,6 @@
 
 import React, { Component } from 'react';
+import 'devextreme/dist/css/dx.light.css';
 import Main from './components/MainComponent';
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
